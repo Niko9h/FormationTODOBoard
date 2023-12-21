@@ -18,7 +18,7 @@ class TodoListWindow:
         self.root.title("Todo List")
 
         self.tree = ttk.Treeview(self.root, columns=("Id", "Tâche", "Traité"), show="headings")
-        self.tree.heading("Tâche", text="Libellé de la tâche")
+        self.tree.heading("Tâche", text="Libellé de la tâche", command=lambda: self.sort_by_column("Tâche", False))
         self.tree.heading("Traité", text="Traité", command=lambda: self.sort_by_column("Traité", False))
         self.tree.pack(pady=15, padx=15, fill=tk.BOTH, expand=True)
 
