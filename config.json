@@ -1,4 +1,5 @@
 {
     "client_name": "Nature & Co",
+    // Connexion à la base de données
     "connection_string": "host=localhost;port=3306;user=root;password=;database=todoboard_dev"
 }
